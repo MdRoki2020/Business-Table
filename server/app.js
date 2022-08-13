@@ -14,7 +14,7 @@ const hpp =require('hpp');
 const cors =require('cors');
 
 // Database Lib Import
-const mongoose =require('mongoose');
+const mongoose =require('mongoose');    
 
 // Security Middleware Implement
 app.use(cors())
@@ -32,7 +32,7 @@ app.use(limiter)
 
 
 // Mongo DB Database Connection
-let URL="mongodb+srv://<username>:<password>@cluster0.l3mtknu.mongodb.net/CRUD?retryWrites=true&w=majority"
+let URI="mongodb+srv://<username>:<password>@cluster0.l3mtknu.mongodb.net/CRUD?retryWrites=true&w=majority"
 let OPTION={user:'rsroki2022',pass:'AaBbCc2580!!@@',autoIndex:true}
 mongoose.connect(URI,OPTION,(error)=>{
     console.log("Connection Success")
