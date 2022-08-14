@@ -1,10 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap'
+import ProductList from './pages/ProductList';
 
 function App() {
   return (
     <div className="App">
-      <Button className='btn btn-primary'>Roki</Button>
+      <ProductList />
     </div>
   );
 }
